@@ -29,7 +29,7 @@ fp-info-cache
 *.csv
 
 # Gerber and others
-ProductionData/
-Gerber/
+IO_16_8_1/ProductionData/
+IO_16_8_1/Gerber/
 
 
