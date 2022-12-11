@@ -20,7 +20,7 @@ A RP2040 is used for it's cost/performance ratio. It is the same controller that
 * USB C: for programming, debug and flashing
 * Serial Wire: alternative for programming, debug and flashing
 * IIC: the PCB can be populated with an QWIIC connector (normally not mounted). This can be used for connecting to other PCBs or experimental use. It uses the same UART as for the RS485.
-* UART, I2C, SPI: instead of using the input pins for inputs they can also be used as an additional interface (see docu of RP2040 for pins and function). Speed up to 10 kHz should be possible. Nighter function nor speed is tested!
+* UART, I2C, SPI: instead of using the input pins for inputs they can also be used as an additional interface (see docu of RP2040 for pins and function). Speed up to 10 kHz should be possible. Neither function nor speed is tested (yet).
 
 ## Switches (on board)
 * Reset: hardware reset for controller (RP2040)
