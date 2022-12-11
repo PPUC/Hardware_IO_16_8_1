@@ -37,7 +37,7 @@ The inputs In_13 to In_16 have an additional open drain output transistor that a
 ## High Power Outputs
 There are 8 high power outputs available. Usually they are connected to pinball solenoids or flashers. A recovery diode for the solenoids is placed on the pcb, so no need for diodes at the coils. The outputs are open drain and drive currents up to 6 A with a load connected to a voltage of up to 60 V.
 
-It's recommended to use 2 wires (there and back) for each solenoid. That improves the EMC a lot.
+It's recommended to use 2 wires (back and forth) for each solenoid. That improves the EMC a lot.
 
 ## Special Output
 One special output is available for high speed signals. The voltage is 5 V, it is a push pull output that can drive a current up to 8 mA. It can be used to e.g. control a WS2812 LED strip.
