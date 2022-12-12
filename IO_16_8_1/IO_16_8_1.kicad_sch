@@ -4276,7 +4276,7 @@
     (effects (font (size 5 5) bold) (justify left bottom))
     (uuid e619a0f4-ee1a-4ad0-9fd0-ebff75b6fb54)
   )
-  (text "remove when\nusing QUIIC\nand/or set\n485_DE high" (at 105.41 50.8 0)
+  (text "remove when\nusing QWIIC\nand/or set\n485_DE high" (at 105.41 50.8 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fa5b749e-e541-4cf1-a42d-58bd0de2a977)
   )
