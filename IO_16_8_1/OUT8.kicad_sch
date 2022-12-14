@@ -3349,7 +3349,7 @@
   (symbol (lib_id "logo:LOGO") (at 307.34 261.62 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a265258b-b67b-40d7-af50-860ef40072e1)
-    (property "Reference" "#G?" (id 0) (at 307.34 254.7529 0)
+    (property "Reference" "#G3" (id 0) (at 307.34 254.7529 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "LOGO" (id 1) (at 307.34 268.4871 0)

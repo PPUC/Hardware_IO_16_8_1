@@ -20,7 +20,7 @@ A RP2040 is used for it's cost/performance ratio. It is the same controller that
 * USB C: for programming, debug and flashing
 * Serial Wire: alternative for programming, debug and flashing
 * IIC: the PCB can be populated with an QWIIC connector (normally not mounted). This can be used for connecting to other PCBs or experimental use. It uses the same UART as for the RS485.
-* UART, I2C, SPI: instead of using the input pins for inputs they can also be used as an additional interface (see docu of RP2040 for pins and function). Speed up to 10 kHz should be possible. Neither function nor speed is tested (yet).
+* UART, I2C, SPI: instead of using the input pins for inputs they can also be used as an additional interface (see docu of RP2040 for pins and function). Speed up to 10 kHz should be possible (100 kHz for In_1 and In_2).
 
 ## Switches (on board)
 * Reset: hardware reset for controller (RP2040)
@@ -31,6 +31,8 @@ A RP2040 is used for it's cost/performance ratio. It is the same controller that
 The 16 inputs are used for reading the state of an external switch. The switch is normally connected to ground (GND). Internally the input is pulled up to 5 V by a 10k resistor.  
 
 All inputs can also be used as signal-outputs (if programmed accordingly). The output is internally pulled up by a 10k resistor to 5 V. A higher voltage can be applied externally (max. 30 V) but be sure to have your hardware and software! setup correctly as no protection for damage is provided in that case. A maximum of 2 mA can be sinked/sourced.
+
+The inputs In_1 and In_2 are designed for higher speed (100 kHz). The Pull-Up can be soldered to other pads to be pulled to 3,3 V (instead of 5 V). An input capacitance can be added (soldered) for better noise immunity but lower speed.
 
 The inputs In_13 to In_16 have an additional open drain output transistor that allows higher currents in case of being used as an output (up to 3 A at 25 °C ambient temperature). The outputs are internally pulled up by a 10k resistor to 5 V. A higher voltage (max. 30 V) can be applied externally but be sure to have your hardware and software! setup correctly as no protection for damage is provided in that case.
 
