@@ -6170,7 +6170,7 @@
     (in_bom yes) (on_board yes)
     (uuid 9d1a26ac-4cd3-4cd7-b134-15cca7759d09)
     (property "Reference" "R17" (id 0) (at 242.57 223.52 90))
-    (property "Value" "2k" (id 1) (at 247.65 224.79 90))
+    (property "Value" "5k" (id 1) (at 247.65 224.79 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 243.84 225.298 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -8035,7 +8035,7 @@
       (reference "R16") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/9d1a26ac-4cd3-4cd7-b134-15cca7759d09"
-      (reference "R17") (unit 1) (value "2k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R17") (unit 1) (value "5k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/135913b1-40cb-4f29-858e-e340673c9948"
       (reference "R18") (unit 1) (value "2k") (footprint "Resistor_SMD:R_0603_1608Metric")

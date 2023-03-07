@@ -6046,7 +6046,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5f2b0d4a-59a5-4dfa-99bb-0441a1bd2426)
     )
-    (fp_text value "2k" (at 0 1.43 90) (layer "F.Fab")
+    (fp_text value "5k" (at 0 1.43 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d90fe71d-705b-4873-9848-4ef25612d918)
     )
