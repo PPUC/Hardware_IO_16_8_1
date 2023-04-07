@@ -1,3 +1,5 @@
+todo: correct geometry for impedance controlled traces for USB
+
 2023-03-07  foenich
 
 	Correct voltage for addresses 0 to 7
