@@ -5,6 +5,9 @@ Not everything is tested nor does it fulfill EMC or any other specifications.
 Use at your own risk!
 To make use of anything of this project a basic understanding of electronics and programming is necessary. Nothing of it is "plug and play". I'm surely not liable for any damage to assemblies, pinball machines or even persons.
 
+## Picture of the Board
+![PCB Pic](IO_16_8_1/PCB_V010_TH.jpg)
+
 ## Name
 IO_16_8_1 as it has 16 inputs, 8 outputs and one special output.  
 Actually the inputs can also be used as outputs (see later in this document).
