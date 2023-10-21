@@ -7,7 +7,7 @@
   (title_block
     (title "Inputs, Low Power Outputs")
     (date "2023-01-29")
-    (rev "0.1.0")
+    (rev "1.0.0")
   )
 
   (lib_symbols
