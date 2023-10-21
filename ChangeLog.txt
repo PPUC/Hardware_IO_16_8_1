@@ -1,4 +1,10 @@
-todo: correct geometry for impedance controlled traces for USB
+2023-10-21  foenich
+
+	Released Version 1.0.0
+	Correct geometry for impedance controlled traces for USB
+	
+	* changed USB-wire witdh and reduced distance to GND
+	* changed versioning to x.y.z (major.functional change.bugfix)
 
 2023-03-07  foenich
 
