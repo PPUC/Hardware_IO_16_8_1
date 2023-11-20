@@ -48,6 +48,9 @@ It's recommended to use 2 wires (back and forth) for each solenoid. That improve
 ## Special Output
 One special output is available for high speed signals. The voltage is 5 V, it is a push pull output that can drive a current up to 8 mA. It can be used to e.g. control a WS2812 LED strip.
 
+## Recommendations
+* Connect only one Flipper to a pcb if possible. The advantage is, that all the energy of the big capacitor is available for the flipper, which is usually the solenoid with the highest current.
+* Wire related switches and solenoids for fast flip devices (e.g. bumper, sling, kick back) to the same pcb. Then you can archive the shortest possible time lag between activating the switch and firing the solenoid.
 
 
 
