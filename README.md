@@ -31,11 +31,13 @@ A RP2040 is used for it's cost/performance ratio. It is the same controller that
 * DIP-switches: usually used to select an address for RS485 (16 combinations)
 
 ## Inputs (and low power outputs)
-The 16 inputs are used for reading the state of an external switch. The switch is normally connected to ground (GND). Internally the input is pulled up to 5 V by a 10k resistor.  
+The 16 inputs are used for reading the state of an external switch. The switch is normally connected to ground (GND). Internally the input is pulled up to 5 V by a 10k resistor.
 
 All inputs can also be used as signal-outputs (if programmed accordingly). The output is internally pulled up by a 10k resistor to 5 V. A higher voltage can be applied externally (max. 30 V) but be sure to have your hardware and software! setup correctly as no protection for damage is provided in that case. A maximum of 2 mA can be sinked/sourced.
 
 The inputs In_2 and In_3 are designed for higher speed (100 kHz). The Pull-Up can be soldered to other pads to be pulled to 3,3 V (instead of 5 V). An input capacitance can be added (soldered) for better noise immunity but lower speed.
+
+If the input terminals are used for a switch matrix (no matter if used as coloum or row) the input resistor (330 Ohm) must be short cut (or replaced by a zero Ohm type). Background: the 330 Ohm resistor protects the circuit if the terminal is used as an output and accidently a short cut is done at the terminal. Unfortunately the low voltage value gets too high when used in a switch matrix (diode voltage plus voltage drop due to added up currents through the resistor). This happens when more switches are closed at the same time.
 
 The inputs In_13 to In_16 have an additional open drain output transistor that allows higher currents in case of being used as an output (up to 3 A at 25 °C ambient temperature). The outputs are internally pulled up by a 10k resistor to 5 V. A higher voltage (max. 30 V) can be applied externally but be sure to have your hardware and software! setup correctly as no protection for damage is provided in that case. Please be aware that the default state (before software takes over control) is "on". 
 If used as input In_13 to In_16 feature a memory (similar to a relay self-holding function). If the input has ever seen a low signal (e.g. switch closed to GND) it will stay that way until it gets an active high signal from the RP2040 (make the corresponding pin an output with signal "high" and then make it an input again). If this behavior is not wanted you can lift pin 3 of Q13 to Q16, then you have an input/output like e.g. terminal 1 with static behavior but no additional output power.
@@ -51,6 +53,8 @@ One special output is available for high speed signals. The voltage is 5 V, it i
 ## Recommendations
 * Connect only one Flipper to a pcb if possible. The advantage is, that all the energy of the big capacitor is available for the flipper, which is usually the solenoid with the highest current.
 * Wire related switches and solenoids for fast flip devices (e.g. bumper, sling, kick back) to the same pcb. Then you can archive the shortest possible time lag between activating the switch and firing the solenoid.
+* If the input terminals are used for a switch matrix (no matter if used as coloum or row) the input resistor (330 Ohm) must be short cut (or replaced by a zero Ohm type). Background: the 330 Ohm resistor protects the circuit if the terminal is used as an output and accidently a short cut is done at the terminal. Unfortunately the voltage drop at the resistor adds up when used in a switch matrix (diode voltage plus voltage drop due to added up currents through the resistor).
+
 
 
 
