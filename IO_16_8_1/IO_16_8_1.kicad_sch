@@ -7741,10 +7741,10 @@
       (reference "C28") (unit 1) (value "470p") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/e4dc0cf8-90a8-459a-87df-3f71f348298f/6196ef9b-97ef-4ca7-a79c-491f2af658e2"
-      (reference "C29") (unit 1) (value "nmount") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C29") (unit 1) (value "470p") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/e4dc0cf8-90a8-459a-87df-3f71f348298f/de507796-11bd-4d03-8a6c-ef10a63305e1"
-      (reference "C30") (unit 1) (value "nmount") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C30") (unit 1) (value "470p") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/e4dc0cf8-90a8-459a-87df-3f71f348298f/eba956ca-945c-42b5-ab71-ac06886b7447"
       (reference "C31") (unit 1) (value "470p") (footprint "Capacitor_SMD:C_0603_1608Metric")

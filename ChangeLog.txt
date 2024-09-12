@@ -1,5 +1,12 @@
 2023-10-21  foenich
 
+	Released Version 1.0.1
+	Changed default placement for capacitors at IN_2 and IN_3
+	
+	* set C29 and C30 to mount
+
+2023-10-21  foenich
+
 	Released Version 1.0.0
 	Correct geometry for impedance controlled traces for USB
 	
