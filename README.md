@@ -53,6 +53,8 @@ One special output is available for high speed signals. The voltage is 5 V, it i
 ## Recommendations
 * Connect only one Flipper to a pcb if possible. The advantage is, that all the energy of the big capacitor is available for the flipper, which is usually the solenoid with the highest current. If you have more flipper fingers than PCBs then spread the flipper solenoids as even as possible across the PCBs (e.g. if you have 6 flipper fingers it's better to connect 2 per board instead of all 6 at one board).
 * Wire related switches and solenoids for fast flip devices (e.g. flipper, bumper, sling, kick back) to the same pcb. Then you can archive the shortest possible time lag between activating the switch and firing the solenoid.
+* RS485 termination: short JP2 at the end of the RS485 bus. There should also be a 120 Ohm resistor at the beginning of the bus (e.g. USB to RS485 adapter).
+* RS485 biasing: short JP1 and JP3 exactly once at any point of the RS485 bus. Only do this if no resistors are installed on the USB to RS485 adapter. 
 
 
 

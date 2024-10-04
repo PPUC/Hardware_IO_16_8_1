@@ -1,3 +1,21 @@
+2024-10-04  foenich
+
+	Released Version 1.1.0
+	Jumpers for RS485 bias and termination. Adjusted bias resistors.
+	Prevented current from USB to 5V_IN.
+	+5V no longer at terminal, only internal supply
+	More terminals for A and B.
+	Smaller Cap for +5V
+	
+	* removed F1 (as +5V is no loger at a terminal)
+	* inserted D16
+	* changed J8, pin 5 from +5V to GND
+	* changed J1, pin 4 from GND to A and pin 5 from GND to B
+	* inserted JP1 to JP3
+	* changed C25 from 1000µ-throuhole to 100µ-SMD
+	* changed R3 and R5 form 1k to 620 Ohm (worst case for 16 nodes (Rin=12k) and 120 Ohm at beginning and end)
+	
+
 2023-10-21  foenich
 
 	Released Version 1.0.1
