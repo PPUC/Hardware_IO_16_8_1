@@ -55,7 +55,7 @@ One special output is available for high speed signals. The voltage is 5 V, it i
 * Wire related switches and solenoids for fast flip devices (e.g. flipper, bumper, sling, kick back) to the same pcb. Then you can archive the shortest possible time lag between activating the switch and firing the solenoid.
 * RS485 termination: short JP2 at the end of the RS485 bus. There should also be a 120 Ohm resistor at the beginning of the bus (e.g. USB to RS485 adapter).
 * RS485 biasing: short JP1 and JP3 exactly once at any point of the RS485 bus. Only do this if no resistors are installed on the USB to RS485 adapter. 
-* It's recommended to use flipper coils for higher voltage (like 40 - 50 V) as they draw less current. Since Version 1.1.1 low resistance coils (designed for 24 V) should also work. You should also change the fuse F2 to 10 A for that application.
+* It's recommended to use flipper coils for higher voltage (like 40 - 50 V) as they draw less current. Since Version 1.1.1 low resistance coils (designed for 24 V) should work as well. You should also change the fuse F2 to 10 A for that application.
 * If the MOSFETs on the high power outputs are not available (or you want to use the big player brands) here are some alternatives (I haven't tested any of them, but they should work according to their specification): GL40N10A4 (seems to be the same as NCE0140KA), RD3P200SNFRA, NVD6824NL, IPD90N10S4L-06, LSGG10R085W3
 
 
