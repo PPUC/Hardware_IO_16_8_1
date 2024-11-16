@@ -1,3 +1,11 @@
+2024-11-16  foenich
+
+	Released Version 1.1.1
+	Updated MOSFETS for power outputs (more current at low UGS)
+		
+	* changed type of Q25-Q32 (same package, no change in layout)
+
+
 2024-10-04  foenich
 
 	Released Version 1.1.0

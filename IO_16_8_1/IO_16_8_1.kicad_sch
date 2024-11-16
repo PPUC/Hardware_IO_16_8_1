@@ -6,8 +6,8 @@
 
   (title_block
     (title "IO_16_8_1")
-    (date "2024-10-04")
-    (rev "1.1.0")
+    (date "2024-11-16")
+    (rev "1.1.1")
   )
 
   (lib_symbols
@@ -8051,28 +8051,28 @@
       (reference "Q24") (unit 1) (value "2N7002") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/5e766497-169f-4cea-867f-d1cbd4473a77"
-      (reference "Q25") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q25") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/c76426b8-f668-4883-bf26-a74266021eb4"
-      (reference "Q26") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q26") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/b410c540-242f-4799-b173-1be21b8888e5"
-      (reference "Q27") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q27") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/f81b373e-cb47-4ecd-a176-596a976c85fc"
-      (reference "Q28") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q28") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/5d41a706-3ea6-4f70-94f1-652f32896f4d"
-      (reference "Q29") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q29") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/56eac9cf-7634-410a-a36b-9bbe0f01c916"
-      (reference "Q30") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q30") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/d49bd94a-7a69-4ef9-9b41-8cfd9019361c"
-      (reference "Q31") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q31") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/c5f8e297-f0f5-428a-9eba-1c51bb8e36a7/04a8d51c-1efd-4606-ab27-b5f401845852"
-      (reference "Q32") (unit 1) (value "IRLR3410") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
+      (reference "Q32") (unit 1) (value "NCE0140KA") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin4")
     )
     (path "/99346821-c3ca-4740-9fa6-3a9c773b956b"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")

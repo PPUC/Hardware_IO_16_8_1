@@ -6,8 +6,8 @@
 
   (title_block
     (title "IO_16_8_1")
-    (date "2024-10-04")
-    (rev "1.1.0")
+    (date "2024-11-16")
+    (rev "1.1.1")
   )
 
   (lib_symbols

@@ -43,7 +43,7 @@ The inputs In_13 to In_16 have an additional open drain output transistor that a
 If used as input In_13 to In_16 feature a memory (similar to a relay self-holding function). If the input has ever seen a low signal (e.g. switch closed to GND) it will stay that way until it gets an active high signal from the RP2040 (make the corresponding pin an output with signal "high" and then make it an input again). If this behavior is not wanted you can lift pin 3 of Q13 to Q16, then you have an input/output like e.g. terminal 1 with static behavior but no additional output power.
 
 ## High Power Outputs
-There are 8 high power outputs available. Usually they are connected to pinball solenoids or flashers. A recovery diode for the solenoids is placed on the pcb, so no need for diodes at the coils. The outputs are open drain and drive currents up to 6 A with a load connected to a voltage of up to 60 V.
+There are 8 high power outputs available. Usually they are connected to pinball solenoids or flashers. A recovery diode for the solenoids is placed on the pcb, so no need for diodes at the coils. The outputs are open drain and drive currents up to 20 A with a load connected to a voltage of up to 60 V. Be aware that the current is limited by the fuse F2. It will blow within about 1 s at 20 A. You might use a 10 A fuse if necessary.
 
 It's recommended to use 2 wires (back and forth) for each solenoid. That improves the EMC a lot.
 
@@ -55,9 +55,7 @@ One special output is available for high speed signals. The voltage is 5 V, it i
 * Wire related switches and solenoids for fast flip devices (e.g. flipper, bumper, sling, kick back) to the same pcb. Then you can archive the shortest possible time lag between activating the switch and firing the solenoid.
 * RS485 termination: short JP2 at the end of the RS485 bus. There should also be a 120 Ohm resistor at the beginning of the bus (e.g. USB to RS485 adapter).
 * RS485 biasing: short JP1 and JP3 exactly once at any point of the RS485 bus. Only do this if no resistors are installed on the USB to RS485 adapter. 
-* Use flipper coils for higher voltage (like 40 - 50 V). If you want to use low voltage flipper coils anyway, you probably have to use different MOSFETs on the high power outputs. The low voltage coils draw more current, therefore the MOSFETs must be stronger. You could use one of these (I haven't tested any of them, but they should work according to their specification): RD3P200SNFRA, NVD6824NL, IPD90N10S4L-06, NCE0140KA, LSGG10R085W3
-
-
-
+* It's recommended to use flipper coils for higher voltage (like 40 - 50 V) as they draw less current. Since Version 1.1.1 low resistance coils (designed for 24 V) should also work. You should also change the fuse F2 to 10 A for that application.
+* If the MOSFETs on the high power outputs are not available (or you want to use the big player brands) here are some alternatives (I haven't tested any of them, but they should work according to their specification): GL40N10A4 (seems to be the same as NCE0140KA), RD3P200SNFRA, NVD6824NL, IPD90N10S4L-06, LSGG10R085W3
 
 
