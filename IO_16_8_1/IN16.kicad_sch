@@ -3890,7 +3890,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 85.09 100.33 0) (mirror y) (unit 1)
-    (in_bom no) (on_board yes)
+    (in_bom yes) (on_board yes)
     (uuid 6196ef9b-97ef-4ca7-a79c-491f2af658e2)
     (property "Reference" "C29" (id 0) (at 86.36 99.06 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5154,7 +5154,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 85.09 135.89 0) (mirror y) (unit 1)
-    (in_bom no) (on_board yes)
+    (in_bom yes) (on_board yes)
     (uuid de507796-11bd-4d03-8a6c-ef10a63305e1)
     (property "Reference" "C30" (id 0) (at 86.36 134.62 90)
       (effects (font (size 1.27 1.27)) (justify left))
