@@ -1,3 +1,9 @@
+2024-12-01  foenich
+
+	Corrected silkscreen printing on J1 and J8
+	No extra version released as schematic and function is not affected and nobody ever used V1.1.1 yet
+
+
 2024-11-16  foenich
 
 	Released Version 1.1.1
