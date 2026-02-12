@@ -43,6 +43,16 @@ The inputs In_13 to In_16 have an additional open drain output transistor that a
 If used as input In_13 to In_16 feature a memory (similar to a relay self-holding function). If the input has ever seen a low signal (e.g. switch closed to GND) it will stay that way until it gets an active high signal from the RP2040 (make the corresponding pin an output with signal "high" and then make it an input again). If this behavior is not wanted you can lift pin 3 of Q13 to Q16, then you have an input/output like e.g. terminal 1 with static behavior but no additional output power.  
 Why not keep it simple and make all inputs the same? To give the choice to use the terminals as outputs (mid-power) as in pinball use case, there are often too many inputs and a lack on outputs. Therefore an output transistor to 4 of the I/O pins were added to be able to switch more power. As an side effect if this terminal is configured as an input it has this memory or self-holding characteristic (once triggered stays triggered). This can be dealt with by software, so that it actually acts like a normal input. In the end you have the benefit of mid-power-output but the drawback that the software getting more complex for the use case of a "normal" input. If you use the PPUC software and you have configured the terminal as an input, it acts like a normal input and you don't have to care about it.
 
+Here is an example what steps are needed for input configuration, e.g. for IN_14:
+1. find the corresponding GPIO for IN_14: that is GPIO16 at the physical Pin 27 of RP2040
+2. set GPIO16 as output and set it to "high".
+3. configure the GPIO16 as an input (now it is an input that is "low active", therefore setup for a switch to ground)
+4. if a low at the terminal IN_14 appears, the GPIO16 will be read as "low" and stays that way even if the switch on terminal IN_14 opens again (self-holding)
+5. when you think it's time to reactivate the input ("arm the input"), then goto 2.
+
+If you do 5. always right after the input read "low" than it looks like a normal input without self-holding characteristic.
+
+
 ## High Power Outputs
 There are 8 high power outputs available. Usually they are connected to pinball solenoids or flashers. A recovery diode for the solenoids is placed on the pcb, so no need for diodes at the coils. The outputs are open drain and drive currents up to 20 A with a load connected to a voltage of up to 60 V. Be aware that the current is limited by the fuse F2. It will blow within about 1 s at 20 A. You might use a 10 A fuse if necessary.
 
